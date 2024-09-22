@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>count : <span id="count">1</span></p>
+    <button onclick="increse()">Add</button>
+    <button onclick="decrice()">descrice</button>
+</body>
+    <script>
+        let count = document.getElementById("count")
+        let number =1;
+        function increse() {
+            number = number+1
+            count.innerText=number;
+        }
+        function decrice() {
+            number = number-1
+            count.innerText=number;
+        }
+    </script>
+</html>
